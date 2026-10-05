@@ -1,0 +1,31 @@
+[project]
+name = "mysite"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "django (>=5.2,<6.0)",
+    "psycopg2-binary (>=2.9.13,<3.0.0)",
+    "gunicorn (>=26.2.0,<27.0.0)",
+    "django-debug-toolbar (>=8.0.0,<9.0.0)",
+    "django-filter (>=26.2,<27.0)",
+    "djangorestframework (>=3.18.1,<4.0.0)",
+    "pillow (>=12.3.0,<13.0.0)",
+    "pytz (>=2026.5,<2027.0)",
+    "sqlparse (>=0.6.0,<0.7.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "gitverse"
+url = "https://pypi-mirror.gitverse.ru/simple/"
+priority = "primary"
